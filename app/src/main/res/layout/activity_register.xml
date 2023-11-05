@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/back4"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp"
+            android:background="@drawable/customedittext">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign Up!"
+                android:textSize="36sp"
+                android:textAlignment="center"
+                android:fontFamily="@font/oswaldregular"
+                android:textColor="@color/pink1"
+                />
+            
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/signuptext"
+                android:background="@drawable/customedittext"
+                android:layout_marginTop="40dp"
+                android:textSize="15sp"
+                android:padding="8dp"
+                android:drawableLeft="@drawable/baseline_person_outline_24"
+                android:hint="Username or ID"
+                android:fontFamily="@font/robotlight"
+                android:textStyle="bold"
+                android:drawablePadding="8dp"
+                android:textColor="@color/grayshadow"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/signuppassword"
+                android:background="@drawable/customedittext"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:padding="8dp"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:hint="Password"
+                android:textStyle="bold"
+                android:fontFamily="@font/robotlight"
+                android:drawablePadding="8dp"
+                android:textColor="@color/grayshadow"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="SIGN UP"
+                android:id="@+id/Signupbutton"
+                android:fontFamily="@font/robotlight"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/pink1"
+                android:textColor="@color/vanilla"
+                app:cornerRadius="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/loginprompt"
+                android:text="Already an user? Login here!"
+                android:textSize="18sp"
+                android:padding="8dp"
+                android:fontFamily="@font/robotlight"
+                android:textColor="@color/pink1"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+            
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
